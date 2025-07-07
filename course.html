@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML & CSS Course</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>eLearn Platform</h1>
+    <nav>
+      <a href="index.html">Courses</a>
+    </nav>
+  </header>
+
+  <main class="course-detail">
+    <h2>HTML & CSS Basics</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" 
+              frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <section class="progress">
+      <h3>Your Progress</h3>
+      <progress id="progressBar" value="40" max="100"></progress>
+      <span id="progressPercent">40%</span>
+      <br>
+      <button onclick="updateProgress()">Complete Lesson</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 eLearn Platform</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
